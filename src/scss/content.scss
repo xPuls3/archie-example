@@ -1,0 +1,21 @@
+// You want to style HTML Elements?
+// Put the styles here!
+
+// Search "Styling HTML Elements with CSS"
+// If you need help ^
+
+// This is a SCSS file, not a CSS file
+// So we can do cool stuff like nesting
+
+html {
+
+    overflow: hidden;
+
+    &, body, canvas {
+
+        padding: 0;
+        margin: 0;
+
+    }
+
+}
