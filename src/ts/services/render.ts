@@ -23,7 +23,7 @@ export default class RenderService {
 
     }
 
-    private static drawCircle (path: Path2D, options = {}): Path2D {
+    private static drawCircle (path: Path2D, options = {}): void {
 
         let x = options["x"] || 0;
         let y = options["y"] || 0;
@@ -38,7 +38,6 @@ export default class RenderService {
 
         // Add a circle to the path
         path.arc(x, y, radius, startAngle, endAngle);
-        return path;
 
         // Documentation on "path.arc"
         // - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
